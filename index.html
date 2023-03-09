@@ -16,7 +16,7 @@
 
 <body>
 
-    <div class="container ">
+    <div class="container">
         <!-- Display Of Calculator -->
         <div class="display">
             <input type="text" id="display" placeholder="0" disabled><br>
@@ -24,7 +24,7 @@
         </div>
         <!-- Buttons Of Calculator -->
         <div class="row">
-            <button type="button" class="btn btn-deg" onclick="deg()">DEG</button>
+            <button type="button" class="btn btn-deg" onclick="degree()">DEG</button>
             <button type="button" class="btn btn-fe" onclick="fixedExpo()">F-E</button>
         </div>
 
@@ -40,7 +40,7 @@
             <button type="button" class="btn-trig">
                 <!-- Dropdown Menu Of Trignometry -->
                 <select id="trigno" name="trignometry" onchange="trignometry()">
-                    <option value="trignometry" id="trig" selected disabled>△ Trignometry</option>
+                    <option value="trignometry" id="trig" selected disabled>&#9727; Trignometry</option>
                     <option value="sin">sin(x)</option>
                     <option value="cos">cos(x)</option>
                     <option value="tan">tan(x)</option>
@@ -59,25 +59,25 @@
 
         <div class="row">
             <button type="button" class="btn" onclick="showOpt(this)">2<sup>nd</sup></button>
-            <button type="button" class="btn" onclick="pi()" value="&pi;">&pi;</button>
-            <button type="button" class="btn" onclick="e()" value="e">e</button>
+            <button type="button" class="btn" onclick="pi()">&pi;</button>
+            <button type="button" class="btn" onclick="e()" >e</button>
             <button type="button" class="btn" onclick="clearDisplay()">C</button>
             <button type="button" class="btn" onclick="oneClear()">&#x21B5;</button>
         </div>
 
         <div class="row">
-            <button type="button" class="btn" onclick="xpow()">x<sup>2</sup></button>
-            <button type="button" class="btn" onclick="oneByNum()">1/x</button>
-            <button type="button" class="btn" onclick="abslt()">| x |</button>
-            <button type="button" class="btn" onclick="expo()">exp</button>
+            <button type="button" class="btn" onclick="xpower()">x<sup>2</sup></button>
+            <button type="button" class="btn" onclick="oneByNumber()">1/x</button>
+            <button type="button" class="btn" onclick="absulatevalue()">| x |</button>
+            <button type="button" class="btn" onclick="exponential()">exp</button>
             <button type="button" class="btn" value="%">mod</button>
         </div>
 
         <div class="row">
-            <button type="button" class="btn" onclick="sqroot()">&radic;</button>
+            <button type="button" class="btn" onclick="sqroot()">2&radic;x</button>
             <button type="button" class="btn" value="(">(</button>
             <button type="button" class="btn" value=")">)</button>
-            <button type="button" class="btn" onclick="fact()">n!</button>
+            <button type="button" class="btn" onclick="factorial()">n!</button>
             <button type="button" class="btn btn-opr" value="/">&divide;</button>
         </div>
 
@@ -106,10 +106,10 @@
         </div>
 
         <div class="row">
-            <button type="button" class="btn" onclick="natLog()">In</button>
+            <button type="button" class="btn" onclick="ln()">ln</button>
             <button type="button" class="btn btn-white" onclick="plusMinus()">+/-</button>
             <button type="button" class="btn btn-white" value="0">0</button>
-            <button type="button" class="btn btn-white" value=".">.</button>
+            <button type="button" class="btn btn-white " value=".">.</button>
             <button type="button" class="btn btn-opr btn-equal" onclick="calculate()">=</button>
         </div>
 

@@ -16,6 +16,7 @@ body{
     margin-top: 12%;
     padding: 3px 5px 5px 5px;
     background-color: #f2f4f6;
+    border: solid #4db8ff 2px;
 }
 /* Design Of Display */
 input[type=text]{
@@ -40,7 +41,7 @@ button{
 }
 
 .btn{
-    width: 19%;
+    width: 19%; 
     border: none;
 }
 
