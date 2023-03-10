@@ -2,14 +2,13 @@ let display = document.querySelector("#display");
 let result = document.querySelector("#result");
 let btton = document.querySelectorAll(".btn");
 
-
-
 var memory = 0;
 
 for (const item of btton) {
   item.addEventListener('click', (e => {
     var btnval = e.target.value;
     display.value += btnval;
+    // console.log(display.value);
   }));
 }
 
@@ -22,7 +21,7 @@ function calculate(){
 
 //radians to degree using degree funcation (DEG button)
 function degree(){
-  display.value = (display.value * Math.PI / 180).toFixed(2);
+  display.value = (display.value *( 180 / Math.PI)).toFixed(2);
 }
 
 
@@ -123,18 +122,26 @@ function myCeil() {
 
 //pi function
 function pi(){
-  if(display.value == 0){
+  if(display.value == ""){
     display.value = 3.14;
   }
+  else if(display.value == 0){
+    display.value = "0";
+  }
   else{
-    display.value = (display.value * 3.14);
+    display.value = (display.value * 3.14).toFixed(3);
   }
 }
 
 
 //Euler's Number funcation
 function e(){
-  display.value =  2.7182818284;
+  if(display.value == ""){
+    display.value =  2.7182818284;
+  }else{
+    display.value = (display.value * 2.7182818284).toFixed(3);
+  }
+  
 }
 
 
